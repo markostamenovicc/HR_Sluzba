@@ -28,5 +28,11 @@ namespace HRdatabase
             ZaposleniPodaci zaposleniPodaciForm = new ZaposleniPodaci();
             zaposleniPodaciForm.Show();
         }
+
+        private void btn_ugovorForm_Click(object sender, EventArgs e)
+        {
+            Ugovori ugovorForm = new Ugovori();
+            ugovorForm.Show();
+        }
     }
 }

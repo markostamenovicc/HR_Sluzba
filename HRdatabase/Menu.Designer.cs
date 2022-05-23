@@ -32,6 +32,7 @@ namespace HRdatabase
             this.label1 = new System.Windows.Forms.Label();
             this.btn_zaposleniSpisakForm = new System.Windows.Forms.Button();
             this.btn_zaposleniPodaciForm = new System.Windows.Forms.Button();
+            this.btn_ugovorForm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -64,11 +65,22 @@ namespace HRdatabase
             this.btn_zaposleniPodaciForm.UseVisualStyleBackColor = true;
             this.btn_zaposleniPodaciForm.Click += new System.EventHandler(this.btn_zaposleniPodaciForm_Click);
             // 
+            // btn_ugovorForm
+            // 
+            this.btn_ugovorForm.Location = new System.Drawing.Point(387, 268);
+            this.btn_ugovorForm.Name = "btn_ugovorForm";
+            this.btn_ugovorForm.Size = new System.Drawing.Size(156, 29);
+            this.btn_ugovorForm.TabIndex = 1;
+            this.btn_ugovorForm.Text = "Ugovori";
+            this.btn_ugovorForm.UseVisualStyleBackColor = true;
+            this.btn_ugovorForm.Click += new System.EventHandler(this.btn_ugovorForm_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(993, 573);
+            this.Controls.Add(this.btn_ugovorForm);
             this.Controls.Add(this.btn_zaposleniPodaciForm);
             this.Controls.Add(this.btn_zaposleniSpisakForm);
             this.Controls.Add(this.label1);
@@ -84,6 +96,7 @@ namespace HRdatabase
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_zaposleniSpisakForm;
         private System.Windows.Forms.Button btn_zaposleniPodaciForm;
+        private System.Windows.Forms.Button btn_ugovorForm;
     }
 }
 
