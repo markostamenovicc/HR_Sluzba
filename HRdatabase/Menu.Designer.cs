@@ -1,7 +1,7 @@
 ﻿
 namespace HRdatabase
 {
-    partial class Form1
+    partial class Menu
     {
         /// <summary>
         ///  Required designer variable.
@@ -30,7 +30,8 @@ namespace HRdatabase
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_zaposleniForm = new System.Windows.Forms.Button();
+            this.btn_zaposleniSpisakForm = new System.Windows.Forms.Button();
+            this.btn_zaposleniPodaciForm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -43,23 +44,35 @@ namespace HRdatabase
             this.label1.TabIndex = 0;
             this.label1.Text = "HR Program";
             // 
-            // btn_zaposleniForm
+            // btn_zaposleniSpisakForm
             // 
-            this.btn_zaposleniForm.Location = new System.Drawing.Point(387, 166);
-            this.btn_zaposleniForm.Name = "btn_zaposleniForm";
-            this.btn_zaposleniForm.Size = new System.Drawing.Size(156, 29);
-            this.btn_zaposleniForm.TabIndex = 1;
-            this.btn_zaposleniForm.Text = "Zaposleni";
-            this.btn_zaposleniForm.UseVisualStyleBackColor = true;
+            this.btn_zaposleniSpisakForm.Location = new System.Drawing.Point(387, 166);
+            this.btn_zaposleniSpisakForm.Name = "btn_zaposleniSpisakForm";
+            this.btn_zaposleniSpisakForm.Size = new System.Drawing.Size(156, 29);
+            this.btn_zaposleniSpisakForm.TabIndex = 1;
+            this.btn_zaposleniSpisakForm.Text = "Zaposleni - Spisak";
+            this.btn_zaposleniSpisakForm.UseVisualStyleBackColor = true;
+            this.btn_zaposleniSpisakForm.Click += new System.EventHandler(this.btn_zaposleniForm_Click);
             // 
-            // Form1
+            // btn_zaposleniPodaciForm
+            // 
+            this.btn_zaposleniPodaciForm.Location = new System.Drawing.Point(387, 216);
+            this.btn_zaposleniPodaciForm.Name = "btn_zaposleniPodaciForm";
+            this.btn_zaposleniPodaciForm.Size = new System.Drawing.Size(156, 29);
+            this.btn_zaposleniPodaciForm.TabIndex = 1;
+            this.btn_zaposleniPodaciForm.Text = "Zaposleni - Podaci";
+            this.btn_zaposleniPodaciForm.UseVisualStyleBackColor = true;
+            this.btn_zaposleniPodaciForm.Click += new System.EventHandler(this.btn_zaposleniPodaciForm_Click);
+            // 
+            // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(993, 573);
-            this.Controls.Add(this.btn_zaposleniForm);
+            this.Controls.Add(this.btn_zaposleniPodaciForm);
+            this.Controls.Add(this.btn_zaposleniSpisakForm);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "Menu";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -69,7 +82,8 @@ namespace HRdatabase
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_zaposleniForm;
+        private System.Windows.Forms.Button btn_zaposleniSpisakForm;
+        private System.Windows.Forms.Button btn_zaposleniPodaciForm;
     }
 }
 
